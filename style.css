@@ -1,3 +1,18 @@
+.toChange {
+    font-size: 120%;
+}
+.toChange2 {
+    font-size: 105%;
+}
+.toChange3 {
+    font-size: 105%;
+}
+.bold { 
+    font-weight: bold;
+}
+footer {
+    font-size: 130%;
+}
 body {
     margin: 0;
     padding: 0;
@@ -674,10 +689,6 @@ a {
     font-weight: lighter;
     max-width: 520px;
     margin: auto auto auto auto;
-}
-
-p {
-    font-size: 11px;
 }
 
 .tight-width-whitespace {

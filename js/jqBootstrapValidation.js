@@ -183,7 +183,7 @@
             //                                                     EMAIL
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
-              message = "Not a valid email address<!-- data-validator-validemail-message to override -->";
+              message = "Adresse email non valide";
               if ($this.data("validationValidemailMessage")) {
                 message = $this.data("validationValidemailMessage");
               } else if ($this.data("validationEmailMessage")) {
@@ -462,7 +462,7 @@
                   $(el).attr("aria-invalid", "true");
                 } else {
                   var original = $this.data("original-aria-invalid");
-                  $(el).attr("aria-invalid", (original !== undefined ? original : false));
+                  $(el).attr("aria-ainvalid", (original !== undefined ? original : false));
                 }
               });
 
@@ -482,7 +482,7 @@
                     ( settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : "" ));
                 } else {
                   // Multiple? Being sloppy? Glue them together into an UL.
-                  $helpBlock.html("<ul class=\"list-unstyled alert alert-warning\" role=\"alert\"><li>" + errorsFound.join("</li><li>") + "</li></ul>" +
+                  $helpBlock.html("<ul class=\"list-unstyled alert alert-danger\" role=\"alert\"><li>" + errorsFound.join("</li><li>") + "</li></ul>" +
                     ( settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : "" ));
                 }
               } else {
@@ -836,7 +836,7 @@
 			required: {
 				name: "Required",
 				type: "required",
-				message: "This is required<!-- data-validator-required-message to override -->"
+				message: "Veuillez remplir ce champs!"
 			},
 			checkone: {
 				name: "Checkone",
